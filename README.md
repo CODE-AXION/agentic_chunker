@@ -39,7 +39,7 @@ Content-Type: application/json
 Agentic Chunker operates on a Bring Your Own Key (BYOK) model. To use the service, you must provide your own API keys for the LLM providers (e.g., OpenAI, Anthropic) you wish to use. This gives you full control over your models and billing.
 The API will not function without a valid provider key configured in your account.
 
-1. Navigate to the **Integrations** page in your dashboard: [http://localhost:3000/app/integrations](http://localhost:3000/app/integrations)
+1. Navigate to the **Integrations** page in your dashboard: [https://hierarchychunker.codeaxion.com/app/integrations](https://hierarchychunker.codeaxion.com/app/integrations)
 2. Add and save the API keys for the LLM providers you intend to use.
 
 Once configured, our API will use your keys for all LLM inference tasks associated with your account.
@@ -48,7 +48,7 @@ Once configured, our API will use your keys for all LLM inference tasks associat
 
 ## API Endpoints
 
-The base URL for all API endpoints is: `https://api.agentic-chunker.codeaxion.com`
+The base URL for all API endpoints is: `https://api.agenticchunker.codeaxion.com`
 
 ### `POST /chunk/hierarchy`
 
@@ -102,7 +102,7 @@ To maintain context across page breaks in a large document, pass the last chunk 
 import requests
 import json
 
-api_url = "https://api.agentic-chunker.codeaxion.com/chunk/hierarchy"
+api_url = "https://api.agenticchunker.codeaxion.com/chunk/hierarchy"
 api_key = "<YOUR_API_KEY>"
 
 content = """
@@ -206,7 +206,7 @@ The request body is similar to the `/hierarchy` endpoint but typically uses fewe
 import requests
 import json
 
-url = "https://api.agentic-chunker.codeaxion.com/chunk/sentence"
+url = "https://api.agenticchunker.codeaxion.com/chunk/sentence"
 
 headers = {
     "Content-Type": "application/json",
